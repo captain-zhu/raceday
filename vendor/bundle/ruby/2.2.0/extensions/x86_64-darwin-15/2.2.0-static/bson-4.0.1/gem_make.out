@@ -1,0 +1,19 @@
+/Users/zhuyongxuan1/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160206-50555-rssrb2.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling native.c
+In file included from native.c:21:
+./native-endian.h:113:17: warning: unused function '__bson_uint32_swap_slow' [-Wunused-function]
+static uint32_t __bson_uint32_swap_slow(uint32_t v)
+                ^
+./native-endian.h:164:15: warning: unused function '__bson_double_swap_slow' [-Wunused-function]
+static double __bson_double_swap_slow(double v)
+              ^
+2 warnings generated.
+linking shared-object native.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 native.bundle ./.gem.20160206-50555-1bb252u
